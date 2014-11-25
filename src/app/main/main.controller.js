@@ -3,7 +3,8 @@
 angular.module('csimages')
   .controller('MainCtrl', function ($scope) {
     $scope.width = 200;
-    $scope.height = 300;
+    $scope.height = 190;
+    $scope.pixel = 256;
 
     $scope.awesomeThings = [
       {
