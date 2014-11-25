@@ -9,9 +9,10 @@
       Always a pleasure scaffolding your apps.
     </p>
     <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
+    <input ng-model="width"/>
   </div>
 
-  <div class="row">
+<!--   <div class="row">
     <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in awesomeThings | orderBy:'rank'">
       <div class="thumbnail">
         <img class="pull-right" ng-src="assets/images/{{awesomeThing.logo}}" alt="{{awesomeThing.title}}">
@@ -20,6 +21,14 @@
           <p>{{awesomeThing.description}}</p>
           <p><a ng-href="{{awesomeThing.url}}">{{awesomeThing.url}}</a></p>
         </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="row">
+    <div class="col-sm-6 col-md-4 col-lg-3" ng-repeat="awesomeThing in awesomeThings | orderBy:'rank'">
+      <div class="thumbnail">
+        <img ng-src="{{awesomeThing.image}}?w={{width}}" >
       </div>
     </div>
   </div>
